@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Restaurant in Chakia | Navin's Restro & Banquet - Family Dining & Banquet Hall</title>
+    <meta name="description" content="Experience royal taste and grand celebrations at Navin's Restro & Banquet in Chakia. Best restaurant near CRPF Gate for veg & non-veg food, family dining, and banquet hall for weddings, birthdays, and parties. Book online now!">
+    <meta name="keywords" content="best restaurant in Chakia, restaurant near CRPF Gate Chakia, banquet hall in Chakia, family restaurant Chakia, veg & non-veg restaurant in Chakia, birthday party hall Chakia">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; color: #000; background: #f9f9f9; line-height: 1.6; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; height: auto; }
+
+        /* Color Palette: Dark Red (#8B0000), Gold (#FFD700), Black (#000) */
+        .btn { background: #8B0000; color: #FFD700; padding: 12px 24px; border: none; border-radius: 5px; font-weight: 500; cursor: pointer; transition: all 0.3s; }
+        .btn:hover { background: #FFD700; color: #8B0000; transform: scale(1.05); }
+        .gold-text { color: #FFD700; }
+        .red-bg { background: #8B0000; color: #FFD700; }
+
+        /* Header */
+        header { position: fixed; top: 0; width: 100%; background: rgba(0,0,0,0.9); z-index: 100; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; }
+        header .logo { font-size: 1.5em; font-weight: 700; color: #FFD700; }
+        nav ul { list-style: none; display: flex; gap: 20px; }
+        nav a { color: #FFD700; transition: color 0.3s; }
+        nav a:hover { color: #8B0000; }
+        .mobile-menu { display: none; }
+
+        /* Sections */
+        section { padding: 80px 20px; min-height: 100vh; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1920x1080?text=Hero+Banner') center/cover; color: #FFD700; text-align: center; display: flex; flex-direction: column; justify-content: center; }
+        .hero h1 { font-size: 3em; margin-bottom: 10px; }
+        .hero p { font-size: 1.2em; margin-bottom: 30px; }
+        .hero .cta-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+
+        .about, .menu, .banquet, .gallery, .contact { max-width: 1200px; margin: 0 auto; }
+        .about { background: #fff; }
+        .menu { background: #f0f0f0; }
+        .banquet { background: #fff; }
+        .gallery { background: #f0f0f0; }
+        .contact { background: #000; color: #FFD700; }
+
+        /* Menu Cards */
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .menu-card { background: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px; transition: transform 0.3s; }
+        .menu-card:hover { transform: translateY(-5px); }
+        .menu-card.special { border: 2px solid #FFD700; }
+        .menu-card h3 { color: #8B0000; }
+
+        /* Gallery */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .gallery-item { overflow: hidden; border-radius: 10px; transition: transform 0.3s; }
+        .gallery-item:hover { transform: scale(1.05); }
+
+        /* Form */
+        form { max-width: 500px; margin: 0 auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        form input, form textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; }
+        form button { width: 100%; }
+
+        /* WhatsApp Button */
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: #fff; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; font-size: 1.5em; box-shadow: 0 4px 8px rgba(0,0,0,0.3); transition: transform 0.3s; z-index: 1000; }
+        .whatsapp-float:hover { transform: scale(1.1); }
+
+        /* Instagram */
+        .instagram { text-align: center; margin: 20px 0; }
+        .instagram a { margin: 0 10px; font-size: 1.5em; color: #E4405F; }
+
+        /* Footer */
+        footer { background: #000; color: #FFD700; text-align: center; padding: 20px; }
+
+        /* Mobile-First Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2em; }
+            .hero .cta-buttons { flex-direction: column; align-items: center; }
+            nav ul { display: none; }
+            .mobile-menu { display: block; cursor: pointer; }
+            .menu-grid { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Navin's Restro & Banquet</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#banquet">Banquet</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu">☰</div>
+    </header>
+
+    <section id="hero" class="hero">
+        <h1>Royal Taste & Grand Celebrations at Navin's Restro & Banquet</h1>
+        <p>Perfect place for family dining, parties & weddings</p>
+        <div class="cta-buttons">
+            <a href="tel:09936665013" class="btn">📞 Call Now</a>
+            <a href="https://wa.me/919936665013?text=Hello%20Navin%E2%80%99s%20Restro%20%26%20Banquet%2C%20I%20would%20like%20to%20place%20an%20order%20%2F%20book%20a%20table." class="btn">💬 Order on WhatsApp</a>
+            <a href="#booking" class="btn">📅 Book a Table</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Navin's Restro & Banquet is a family-friendly restaurant offering delicious veg and non-veg cuisine in Chakia. Our spacious banquet hall is ideal for weddings, birthdays, engagements, and corporate events, ensuring memorable celebrations.</p>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-card special">
+                <h3>Chef’s Special – Veg Navin’s Special</h3>
+                <p>Veg | ₹350</p>
+                <p>A delightful mix of seasonal vegetables with rich spices.</p>
+            </div>
+            <div class="menu-card">
+                <h3>Paneer Butter Masala</h3>
+                <p>Veg | ₹250</p>
+            </div>
+            <div class="menu-card">
+                <h3>Chicken Biryani</h3>
+                <p>Non-Veg | ₹300</p>
+            </div>
+            <!-- Add more items as needed -->
+        </div>
+    </section>
+
+    <section id="banquet" class="banquet">
+        <h2>Banquet Services</h2>
+        <p>Host your weddings, receptions, birthdays, engagements, and corporate parties in our grand banquet hall.</p>
+        <a href="tel:09936665013" class="btn">Call for Banquet Booking</a>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="https://via.placeholder.com/300x200?text=Food+Photo" alt="Delicious food at Navin's Restro & Banquet"></div>
+            <div class="gallery-item"><img src="https://via.placeholder.com/300x200?text=Restaurant+Interior" alt="Restaurant interior in Chakia"></div>
+            <div class="gallery-item"><img src="https://via.placeholder.com/300x200?text=Banquet+Hall" alt="Banquet hall for events"></div>
+        </div>
+    </section>
+
+    <section id="booking" class="contact">
+        <h2>Book a Table</h2>
+        <form id="bookingForm">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="tel" name="mobile" placeholder="Mobile Number" required>
+            <input type="date" name="date" required>
+            <input type="time" name="time" required>
+            <input type="number" name="guests" placeholder="Number of Guests" required>
+            <textarea name="message" placeholder="Message"></textarea>
+            <button type="submit" class="btn">Submit Booking</button>
+        </form>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Address: No.1, CRPF Gate, Sonhul, Chakia, Uttar Pradesh 232103</p>
+        <p>Phone: <a href="tel:09936665013">099366 65013</a></p>
+        <p>WhatsApp: <a href="https://wa.me/919936665013">Chat Now</a></p>
+        <p>Open Daily – Closes at 10 PM</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.0!2d83.0!3d25.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDAwJzAwLjAiTiA4M8KwMDAnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="instagram">
+            <h3>Follow Us on Instagram</h3>
+            <a href="https://instagram.com/navinsrestro" target="_blank">📷</a>
+            <!-- Placeholder for feed: Integrate Instagram API here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Navin's Restro & Banquet. All rights reserved.</p>
+        <div class="instagram">
+            <a href="https://instagram.com/navinsrestro" target="_blank">📷</a>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919936665013?text=Hello%20Navin%E2%80%99s%20Restro%20%26%20Banquet%2C%20I%20would%20like%20to%20place%20an%20order%20%2F%20book%20a%20table." class="whatsapp-float">💬</a>
+
+    <script>
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission to WhatsApp
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            const message = `Booking Request:\nName: ${formData.get('name')}\nMobile: ${formData.get('mobile')}\nDate: ${formData.get('date')}\nTime: ${formData.get('time')}\nGuests: ${formData.get('guests')}\nMessage: ${formData.get('message')}`;
+            window.open(`https://wa.me/919936665013?text=${encodeURIComponent(message)}`, '_blank');
+        });
+
+        // Mobile menu toggle (basic)
+        document.querySelector('.mobile-menu').addEventListener('click', () => {
+            document.querySelector('nav ul').style.display = document.querySelector('nav ul').style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
+</body>
+</html>
